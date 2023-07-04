@@ -1,37 +1,12 @@
 const fs = require('fs')
-
-global.NameBot = "CPanelBot"
-global.OwnerBot = ["6283869821927","62838698219270"] // OWNER Bot
-global.AdminPanel = ["","",""] // Admin Panel
-global.OwnerNumber = "08"
-global.OwnerName = ""
+global.APIs = {
+   apimu: "https://apimu.my.id"
+}
+global.NameBot = "Riko Bot"
+global.OwnerNumber = "6283869821927"
+global.OwnerName = "Hamzah"
 global.sessionName = 'session' // GAK USAH UBAH
 global.prefa = ['', '!', '.', '🐦', '🐤', '🗿'] // GAK USAH UBAH
-
-//Manajemen Panel Control
-global.host = "https://"
-global.application = {
-    api_key: "plta_", //Ambil di panel lu || caranya pergi ke setting admin lalu klik garis tiga di pojok kiri atas lalu klik Application API tinggal salin dehh
-    c_api_key: "pltc_" //Ambil di panel lu || caranya pergi ke Account Setting atau klik avatar akun lalu klik API Credentials lalu isi DESCRIPTION isinya bebas lalu klik CREATE
-}
-global.serverCreate = {
-    nestId: "5", //Nest Id panel lu
-    eggId: "15", //Egg Id panel lu
-    limits: {
-      db: "1", //Mending ga usah diganti
-      backups: "1", //Mending ga usah diganti
-      allocation: "0" //Mending ga usah diganti
-    },
-    eggs: {
-      environment: {
-        "CMD_RUN": "npm start", //Sesuaiin sama eggs lu
-        "GIT_ADDRESS": "",
-        "BRANCH": "",
-        "USERNAME": "",
-        "ACCESS_TOKEN": ""
-      }
-    }
-}
 
 global.footer_text = "© WhanGsAPP" + NameBot // NAMA BOT
 global.ttname = "By WhanGsAPP" // NAMA TITLE BUAT FAKE REPLY
