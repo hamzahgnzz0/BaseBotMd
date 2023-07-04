@@ -4,6 +4,8 @@ const pino = require('pino')
 const { Boom } = require('@hapi/boom')
 const fs = require('fs')
 const _ = require('lodash')
+const express = require('express')
+const app = express()
 const yargs = require('yargs/yargs')
 const axios = require('axios')
 const fetch = require('node-fetch')
@@ -535,3 +537,7 @@ clients.sendTextWithMentions = async (jid, text, quoted, options = {}) => client
 }
 
 Botstarted()
+
+app.listen(process.env.PORT || 5000, async () => {
+    console.log('🚀 app running on port', process.env.PORT || 5000)
+  })
